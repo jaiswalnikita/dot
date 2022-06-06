@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@ViewBag.mydata</h1>
+
+<div>
+    <ul>
+        @foreach (var item in ViewBag.mylist)
+        {
+           <li>@item</li> 
+        }
+    </ul>
+</div>
+<div>
+    <ul>
+        @foreach (var item in ViewBag.Modellist)
+        {
+           <li>FirstName=@item.Firstname</li> 
+           <li>LastName=@item.Lastname</li> 
+           <li>Email=@item.Email</li> 
+        }
+    </ul>
+</div>
